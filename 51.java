@@ -55,7 +55,7 @@ class Cub extends Rect {
     }
 
     public double area() {
-        return 2 * (getLength() * getWidth() + getWidth() * getHeight() + getHeight() * getLength());
+        return 2 * (super.getLength() * super.getWidth() + super.getWidth() * getHeight() + getHeight() * super.getLength());
     }
     public double vol() {
         return getHeight() * super.area();
