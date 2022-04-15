@@ -4,6 +4,13 @@ class Student {
     private int sage = 22;
     private static int total = 40;
 
+    {
+        num = "s000";
+        sname = "ÎÒÊÇË­";
+        sage = 22;
+        total = 40;
+    }
+
     public Student() {
     }
 
@@ -57,9 +64,6 @@ class Student {
 
 public class test {
     public static void main(String[] args) {
-        int newAge = 20;
-        Student st1 = new Student("s001", "ËïÎò¿Õ", 500, 40);
-        Student st2 = new Student("s002", "ÌÆÉ®", 50, 35);
         Student st3 = new Student();
         System.out.println("Ñ§ºÅ£º" + st3.getNum());
         System.out.println("ĞÕÃû£º" + st3.getSname());
