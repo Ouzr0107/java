@@ -1,4 +1,4 @@
-package wangzhuojian.lab12
+package wangzhuojian.lab12;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
@@ -32,7 +32,6 @@ class Frame extends JFrame {
         mb1.add(mn1);
         mb1.add(mn2);
         var pm1 = new JPopupMenu();
-        jp.add(pm1);
         jp.add(sp, BorderLayout.CENTER);
         String[] columnNames = {"姓名", "学号"};
         String[][] tableValues = {{"张三", "15h001"}, {"李四", "15h002"}};
@@ -63,6 +62,8 @@ class Frame extends JFrame {
         mi1.addActionListener(e -> JOptionPane.showMessageDialog(null, "您点击了New菜单"));
         mi2.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_O, InputEvent.CTRL_DOWN_MASK));
         mi2.addActionListener(e -> JOptionPane.showMessageDialog(null, "您点击了Open菜单"));
+        bt1.addActionListener(e -> JOptionPane.showMessageDialog(null, "您点击了New菜单"));
+        bt2.addActionListener(e -> JOptionPane.showMessageDialog(null, "您点击了Open菜单"));
         var dl1 = new JDialog(this, false);
         var dl2 = new JDialog(this, true);
         dl1.setSize(400, 200);
@@ -71,6 +72,5 @@ class Frame extends JFrame {
         mi6.addActionListener(e -> dl2.setVisible(true));
         setJMenuBar(mb1);
         setBounds(500, 250, 600, 400);
-//        pack();
     }
 }
